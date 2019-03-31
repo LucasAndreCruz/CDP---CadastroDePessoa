@@ -1,0 +1,57 @@
+﻿@model CadastroPessoas.Models.Pessoa
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+
+    <h2 class="page-header">Registro</h2>
+
+    <div class="row">
+
+        <div class="col-md-1">
+            <b>Código</b>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>@Model.PessoaId</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <b>Nome</b>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>@Model.Nome</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <b>Data de Nascimento</b>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>@Model.DataDeNascimento</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <b>RG</b>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>@Model.RG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <a href="~/Formulario/NovoFormulario" class="btn btn-primary">Novo Registro</a>
+            <a href="~/Home/Resolucao" class="btn btn-success">Resolução da Atividade</a>
+        </div>
+
+    </div>
+</div>

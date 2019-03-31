@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Resolucao";
+}
+
+<h2 class="page-header">Resolução do Exercício</h2>
+    <p>Eu fiz um sistema para cadastro de pessoa, 
+        passando os parametros de acordo com o modelo criado e mostrando em uma view como um registro.
+    </p>
+<hr />
+<p> <a href="https://github.com/LucasAndreCruz/Lucas_Andre_LC">Link do Projeto no GitHub</a></p>
+<div class="row">
+    <div class="col-md-4">
+        <hr />
+        <h3>Model</h3>
+
+        <p>Primeiro passo criar um modelo, como não foi pedido nada vindo do banco, eu mesmo criei um modelo de pessoa apenas com 4 atributos </p>
+        <br />
+        <p>public class Pessoa</p>
+        <p>{ </p>
+        <p>public int PessoaId { get; set; }</p>
+        <p>public string Nome { get; set; }</p>
+        <p>public string DataDeNascimento { get; set; }</p>
+        <p>public string RG { get; set; }</p>
+        <p>} </p>
+
+    </div>
+    <div class="col-md-4">
+        <hr />
+        <h3>Controllers</h3>
+        <p>Segundo passo criar as controllers com as Actions</p>
+        <ul>
+            <li>Home</li>
+            <ul>
+                <li>
+                    <p>public ActionResult <b>Index()</b></p>
+                </li>
+
+                <li>
+                    <p>public ActionResult <b>Resolucao</b>()
+                </li>
+
+            </ul>
+        </ul>
+        <ul>
+            <li>Formulario</li>
+            <ul>
+                <li>
+                    <p>public ActionResult <b>Index()</b></p>
+                </li>
+
+                <li>
+                    <p>public ActionResult <b>NovoFormulario</b>()
+                </li>
+
+            </ul>
+        </ul>
+        <ul>
+            <li>Registro</li>
+            <ul>
+                <li>
+                    <p>public ActionResult <b>Index(Pessoa pessoa)</b></p>
+                </li>
+
+                <li>
+                    <p>public ActionResult <b>Lista</b>(Pessoa pessoa)</p>
+                </li>
+
+            </ul>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <hr />
+        <h3>View</h3>
+        <p>Terceiro passo criar as views</p>
+        <ul>
+            <li>Home</li>
+            <ul>
+                <li>Index</li>
+                <li>Resolucao</li>
+            </ul>
+            <li>Formulario</li>
+            <ul>
+                <li>Index</li>
+                <li>Formulario</li>
+            </ul>
+            <li>Registro</li>
+            <ul>
+                <li>Index</li>
+                <li>Lista</li>
+            </ul>
+        </ul>
+    </div>
+
+</div>
